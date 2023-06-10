@@ -617,11 +617,18 @@ section {
 }
 
 .portfolio .portfolio-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background: rgba(69, 80, 91, 0.8);
+  /* background: rgba(69, 80, 91, 0.8); */
+  background: white;
+}
+.portfolio .portfolio-wrap img{
+  max-height: 75vh;
 }
 
 .portfolio .portfolio-wrap::before {
@@ -1007,6 +1014,15 @@ section {
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #0563bb;
+}
+
+.swiper-slide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img{
+  max-width: 45vh;
 }
 
 @media (min-width: 992px) {
