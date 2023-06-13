@@ -152,6 +152,16 @@
     });
   }
 
+  /** 
+   * Age generated
+  */
+  var birthYear = 2002; // Replace with the actual birth year
+  var currentDate = new Date();
+  var currentYear = currentDate.getFullYear();
+  var age = currentYear - birthYear;
+  var ageElement = document.getElementById("age");
+  ageElement.innerHTML = age;
+
   /**
    * Skills animation
    */
